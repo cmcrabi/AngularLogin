@@ -1,0 +1,19 @@
+<mat-card class="justified">
+  <form [formGroup]="loginFromGroup" (ngSubmit)="onSubmit(loginFromGroup)">
+    <mat-form-field class="full-width" appearance="fill">
+      <mat-label>Email</mat-label>
+      <input type="email" matInput formControlName="email" placeholder="email">
+    </mat-form-field>
+    <mat-form-field class="full-width" appearance="fill">
+      <mat-label>Password</mat-label>
+      <input type="password" matInput formControlName="password" placeholder="password">
+    </mat-form-field>
+    <mat-form-field class="full-width" appearance="fill">
+      <mat-label>Confirm Password</mat-label>
+      <input type="password" matInput formControlName="confirmPassword" placeholder="confirmPassword">
+    </mat-form-field>
+    <mat-card-actions align="end">
+      <button mat-stroked-button color="primary" type="submit">Register</button>
+    </mat-card-actions>
+  </form>
+</mat-card>
